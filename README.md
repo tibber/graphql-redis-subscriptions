@@ -1,6 +1,13 @@
-# graphql-redis-subscriptions
+# Fork of graphql-redis-subscriptions
 
-[![Build Status](https://travis-ci.org/davidyaha/graphql-redis-subscriptions.svg?branch=master)](https://travis-ci.org/davidyaha/graphql-redis-subscriptions)
+This is a fork that contains [a fix already submitted in a PR](https://github.com/davidyaha/graphql-redis-subscriptions/pull/599).
+Once the fix is merged (or else the underlying issue is fixed) we can go back
+to consuming the original package as we normally would.
+
+Please note that dependant projects may consume the master branch so be careful
+if you push any changes to it.
+
+# Original README contents
 
 This package implements the PubSubEngine Interface from the [graphql-subscriptions](https://github.com/apollographql/graphql-subscriptions) package and also the new AsyncIterator interface. 
 It allows you to connect your subscriptions manager to a Redis Pub Sub mechanism to support 
